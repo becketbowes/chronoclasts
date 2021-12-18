@@ -203,13 +203,19 @@ footer img {
     }
 }
 
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 780px) {
         header {
-            font-size: 38px;
+            font-size: 25px;
         }
     
-        header nav ul li a {
-            padding: 0 80px;
+        header nav ul {
+            flex-direction: column;
+            align-items: baseline;
+        }
+
+        .hero div {
+            top: 30%;
+            font-size: 12px;
         }
 
         article div {
@@ -231,10 +237,6 @@ footer img {
             font-size: 25px;
         }
 
-        header nav ul li a {
-            padding: 50px;
-        }
-
         .contactform input, textarea, button {
             width: 80%;
         }
@@ -245,16 +247,23 @@ footer img {
         font-size: 20px;
     }
 
-    header nav ul li a {
-        padding: 30px;
-    }
-
     .hero div {
-        top: 50%;
         font-size: 10px;
     }
 
     article div {
         top: 30px;
     }
+}
+
+@media screen and (max-width: 290px) {
+    header {
+        font-size: 11px;
+    }
+
+    .hero div {
+        top: 20%;
+        font-size: 8px;
+    }
+
 }
